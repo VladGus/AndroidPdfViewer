@@ -251,28 +251,28 @@ class DragPinchManager implements GestureDetector.OnGestureListener, GestureDete
 
     @Override
     public boolean onScale(ScaleGestureDetector detector) {
-        float dr = detector.getScaleFactor();
-        float wantedZoom = pdfView.getZoom() * dr;
-        if (wantedZoom < MINIMUM_ZOOM) {
-            dr = MINIMUM_ZOOM / pdfView.getZoom();
-        } else if (wantedZoom > MAXIMUM_ZOOM) {
-            dr = MAXIMUM_ZOOM / pdfView.getZoom();
-        }
-        pdfView.zoomCenteredRelativeTo(dr, new PointF(detector.getFocusX(), detector.getFocusY()));
+//        float dr = detector.getScaleFactor();
+//        float wantedZoom = pdfView.getZoom() * dr;
+//        if (wantedZoom < MINIMUM_ZOOM) {
+//            dr = MINIMUM_ZOOM / pdfView.getZoom();
+//        } else if (wantedZoom > MAXIMUM_ZOOM) {
+//            dr = MAXIMUM_ZOOM / pdfView.getZoom();
+//        }
+//        pdfView.zoomCenteredRelativeTo(dr, new PointF(detector.getFocusX(), detector.getFocusY()));
         return true;
     }
 
     @Override
     public boolean onScaleBegin(ScaleGestureDetector detector) {
-        scaling = true;
+//        scaling = true;
         return true;
     }
-
+//
     @Override
     public void onScaleEnd(ScaleGestureDetector detector) {
-        pdfView.loadPages();
-        hideHandle();
-        scaling = false;
+//        pdfView.loadPages();
+//        hideHandle();
+//        scaling = false;
     }
 
     @Override

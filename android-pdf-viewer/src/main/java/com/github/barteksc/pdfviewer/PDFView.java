@@ -1288,7 +1288,7 @@ public class PDFView extends RelativeLayout {
 
         private boolean enableSwipe = true;
 
-        private boolean enableDoubletap = true;
+        private boolean enableDoubletap = false;
 
         private OnDrawListener onDrawListener;
 
