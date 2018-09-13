@@ -178,7 +178,7 @@ public class PDFView extends RelativeLayout {
 
     private boolean enableSwipe = true;
 
-    private boolean doubletapEnabled = true;
+    private boolean doubletapEnabled = false;
 
     private boolean nightMode = false;
 
